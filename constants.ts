@@ -25,36 +25,36 @@ export const DEFAULT_SEARCH_ENGINES: SearchEngine[] = [
 ];
 
 export const getDefaultCategories = (language: Language = 'en'): Category[] => {
-  if (language === 'zh') {
-    return [
-      {
-        id: 'c1',
-        title: '日常',
-        links: [
-          { id: 'l1', title: 'Gmail', url: 'https://mail.google.com' },
-          { id: 'l2', title: 'YouTube', url: 'https://www.youtube.com' },
-          { id: 'l3', title: '天气', url: 'https://weather.com' },
-        ],
-      },
-      {
-        id: 'c2',
-        title: '工作与开发',
-        links: [
-          { id: 'l4', title: 'GitHub', url: 'https://github.com' },
-          { id: 'l5', title: 'ChatGPT', url: 'https://chat.openai.com' },
-          { id: 'l6', title: 'Figma', url: 'https://www.figma.com' },
-        ],
-      },
-      {
-        id: 'c3',
-        title: '新闻与阅读',
-        links: [
-          { id: 'l7', title: 'Hacker News', url: 'https://news.ycombinator.com' },
-          { id: 'l8', title: 'Twitter', url: 'https://twitter.com' },
-        ],
-      },
-    ];
-  }
+  // if (language === 'zh') {
+  //   return [
+  //     {
+  //       id: 'c1',
+  //       title: '日常',
+  //       links: [
+  //         { id: 'l1', title: 'Gmail', url: 'https://mail.google.com' },
+  //         { id: 'l2', title: 'YouTube', url: 'https://www.youtube.com' },
+  //         { id: 'l3', title: '天气', url: 'https://weather.com' },
+  //       ],
+  //     },
+  //     {
+  //       id: 'c2',
+  //       title: '工作与开发',
+  //       links: [
+  //         { id: 'l4', title: 'GitHub', url: 'https://github.com' },
+  //         { id: 'l5', title: 'ChatGPT', url: 'https://chat.openai.com' },
+  //         { id: 'l6', title: 'Figma', url: 'https://www.figma.com' },
+  //       ],
+  //     },
+  //     {
+  //       id: 'c3',
+  //       title: '新闻与阅读',
+  //       links: [
+  //         { id: 'l7', title: 'Hacker News', url: 'https://news.ycombinator.com' },
+  //         { id: 'l8', title: 'Twitter', url: 'https://twitter.com' },
+  //       ],
+  //     },
+  //   ];
+  // }
 
   // Default English categories
   return [
@@ -64,24 +64,33 @@ export const getDefaultCategories = (language: Language = 'en'): Category[] => {
       links: [
         { id: 'l1', title: 'Gmail', url: 'https://mail.google.com' },
         { id: 'l2', title: 'YouTube', url: 'https://www.youtube.com' },
-        { id: 'l3', title: 'Weather', url: 'https://weather.com' },
+        { id: 'blog', title: 'Blog', url: 'https://ameno.space' },
       ],
     },
     {
       id: 'c2',
       title: 'Work & Dev',
       links: [
-        { id: 'l4', title: 'GitHub', url: 'https://github.com' },
         { id: 'l5', title: 'ChatGPT', url: 'https://chat.openai.com' },
-        { id: 'l6', title: 'Figma', url: 'https://www.figma.com' },
+        { id: 'ssh', title: 'HSS', url: 'https://hss.416860349.xyz:8920/' },
+        { id: 'mail', title: 'Ameno Email', url: 'https://email.ameno.space/' },
       ],
+    }, 
+    {
+      id: 'media',
+      title: 'media',
+      links: [
+        { id: 'emby', title: 'Emby', url: 'https://ameno.416860349.xyz:8920/' },
+        { id: 'cinex', title: 'Cinex', url: 'https://cinex.416860349.xyz:8920/' },
+        { id: 'moon', title: 'MoonTV', url: 'https://cmoontv.dedyn.io/' },
+      ]
     },
     {
       id: 'c3',
       title: 'News & Read',
       links: [
-        { id: 'l7', title: 'Hacker News', url: 'https://news.ycombinator.com' },
-        { id: 'l8', title: 'Twitter', url: 'https://twitter.com' },
+        { id: 'blinko', title: 'Blinko', url: 'https://blinko.416860349.xyz:8920/' },
+        { id: 'karakeep', title: 'Karakeep', url: 'https://bookmark.416860349.xyz:8920/' },
       ],
     },
   ];
